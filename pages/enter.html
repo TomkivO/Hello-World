@@ -16,34 +16,123 @@
             <li><a href="../project2.html">Головна</a></li>
             <li><a href="../pages/about.html">Про сайт</a></li>
             <li><a href="../pages/blog.html">Блог</a></li>
-            <li class="active"><a href="javascript:void(0)">Контакти</a></li>
+            <li><a href="../pages/contacts.html">Контакти</a></li>
             <li><a href="../pages/weather.html">Погода</a></li>
-            <li><a href="../pages/enter.html">Вхід</a></li>
+            <li class="active"><a href="javascript:void(0)">Вхід</a></li>
+            <li><a href="../pages/registration.html">Реєстрація</a></li>
         </ul>
     </div>
 </header>
 <main>
-    <div class="container">
-        <h1>Контакти</h1>
-        <hr>
-        <div class="contact-information">
-            <strong>Адреса:</strong>
-            <span>Львів, вул. Ліська, 16, Львівський інститут менеджменту</span>
-        </div>
-        <div class="contact-information">
-            <strong>Телефони:</strong>
-            <span>
-                    <a href="tel:38(093)975-90-90">+38 (093) 975-90-90</a>
-                    <a href="tel:38(097)975-90-90">+38 (097) 975-90-90</a>
-                    <a href="tel:38(066)975-90-90">+38 (066) 975-90-90</a>
-                </span>
-        </div>
-        <div class="contact-information">
-            <strong>E-mail:</strong>
-            <span>
-                    <a href="mailto:lviv.info@qalight.com.ua">lviv.info@qalight.com.ua</a>
-                </span>
-        </div>
+    <div class="input-form">
+        <form>
+            <label>
+                First name<span class="required">*</span>
+                <input type="text" name="first name">
+            </label>
+            <label>
+                Last name<span class="required">*</span>
+                <input type="text" name="last name">
+            </label>
+            <label>
+                Address
+                <textarea title="address" name="some-text-area" cols="30" rows="10"></textarea>
+            </label>
+            <label>
+                City
+            <input type="text" name="city">
+            </label>
+            <label for="state-list">State</label>
+            <select id="state-list" name="state-list">
+                <option value="Ukraine">Ukraine</option>
+                <option value="Poland">Poland</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Germany">Germany</option>
+                <option value="Italy">Italy</option>
+            </select>
+            <label>
+                Zip
+                <input type="text" name="zip">
+            </label>
+            <label>
+                Home Phone
+                <input type="tel" name="home-tel">
+            </label>
+            <label>
+                Work Phone
+                <input type="tel" name="work-tel">
+            </label>
+            <label>
+                Fax Number
+                <input type="tel" name="fax">
+            </label>
+            <span>Website</span>
+            <label>
+                URL
+                <input type="url" name="url">
+            </label>
+            <label>
+                Link Name
+                <input type="url" name="link-name">
+            </label>
+            <label>
+                Email Address
+                <input type="url" name="email-address">
+            </label>
+        </form>
+    </div>
+    <div class="question-form">
+        <form>
+            <div class="clearfix">
+                <div class="col-form">
+                <div class="clearfix col-row">
+                    <div class="form-label">title</div>
+                    <div class="form-field">input</div>
+                </div>
+            </div>
+                <div class="col-form">
+                    <div class="clearfix col-row">
+                        <div class="form-label">title</div>
+                        <div class="form-field">input</div>
+                    </div>
+                </div>
+            </div>
+            <span>When is the best time to contact you?</span><br>
+            <label class="inline-label">
+                Morning
+                <input type="radio" name="morning" value="one">
+            </label>
+            <label class="inline-label">
+                Afternoon
+                <input type="radio" name="afternoon" value="two">
+            </label>
+            <label class="inline-label">
+                Evening
+                <input type="radio" name="evening" value="three">
+            </label>
+            <span>When is the best way to contact you?</span><br>
+            <label class="inline-label">
+                Phone
+                <input type="radio" name="phone" value="one">
+            </label>
+            <label class="inline-label">
+                Email
+                <input type="radio" name="email" value="two">
+            </label>
+            <label class="inline-label">
+                Fax
+                <input type="radio" name="fax" value="three">
+            </label>
+            <label>
+                Message
+                <textarea title="message" name="some-text-area" cols="30" rows="10"></textarea>
+            </label>
+        </form>
+    </div>
+    <hr>
+    <div class="button">
+    <span><input type="submit" value="Submit"></span>
+    <span><input type="reset" value="Reset"></span>
     </div>
 </main>
 <footer>
